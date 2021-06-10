@@ -29,17 +29,17 @@ What is your name? --> ''')
         input("Press any key to continue")
         os.system("cls")
         path = input('''A crossroads lies ahead of you...
-                                   (  )   /  ^  /
+                      (  )   /  ^  /
                 (  ) (    ) /  /  /
                (    )  ||  /  /  /
                  || (  )  /  F  /
-  /     \          (    )/  O  /            /_
-   |   |         (  )|| /  R  /        /\  /___\ 
-/     \         (    ) /  E  /        /__\/_____\  
- |   |/     \     ||  /  S  /        /_||/__| |__\   
-_______|___|_________/  T  /____________________      
-< -- V I L L A G E              D E S E R T -- >
-------------------------------------------------
+  /     \          (    )/  O  /       /_
+   |   |         (  )|| /  R  /   /\  /___\ 
+/     \         (    ) /  E  /   /__\/_____\  
+ |   |/     \     ||  /  S  /   /_||/__| |__\   
+_______|___|_________/  T  /__________________      
+< -- V I L L A G E            D E S E R T -- >
+----------------------------------------------
 1. Will you go to the village?
 2. Do you choose the sneaky forest?
 3. Are you confident enough to be exposed in the dessert? 
@@ -57,13 +57,13 @@ What is your name? --> ''')
                 (  ) (    ) /  /  /
                (    )  ||  /  /  /
                  || (  )  /  F  /
-  /     \          (    )/  O  /            /_
-   |   |         (  )|| /  R  /        /\  /___\ 
-/     \         (    ) /  E  /        /__\/_____\  
- |   |/     \     ||  /  S  /        /_||/__| |__\   
-_______|___|_________/  T  /____________________      
-< -- V I L L A G E              D E S E R T -- >
-------------------------------------------------
+  /     \          (    )/  O  /       /_
+   |   |         (  )|| /  R  /   /\  /___\ 
+/     \         (    ) /  E  /   /__\/_____\  
+ |   |/     \     ||  /  S  /   /_||/__| |__\   
+_______|___|_________/  T  /__________________      
+< -- V I L L A G E            D E S E R T -- >
+----------------------------------------------
 1. Will you go to the village?
 2. Do you choose the sneaky forest?
 3. Are you confident enough to be exposed in the dessert? 
