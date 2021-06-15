@@ -1,6 +1,9 @@
 import os
 import winsound
 import Player
+import Enemies
+import Utils
+import random
 
 introMsg = """ 
 *****************************************************************************************
@@ -25,49 +28,15 @@ if user_answer.upper() == "YES":
         player_name = input('''You have chosen o be a mighty warrior!
 What is your name? --> ''')
         player = Player.Warrior(player_name)
-        print("Entering the world...")
-        input("Press any key to continue")
-        os.system("cls")
-        path = input('''A crossroads lies ahead of you...
-                      (  )   /  ^  /
-                (  ) (    ) /  /  /
-               (    )  ||  /  /  /
-                 || (  )  /  F  /
-  /     \          (    )/  O  /       /_
-   |   |         (  )|| /  R  /   /\  /___\ 
-/     \         (    ) /  E  /   /__\/_____\  
- |   |/     \     ||  /  S  /   /_||/__| |__\   
-_______|___|_________/  T  /__________________      
-< -- V I L L A G E            D E S E R T -- >
-----------------------------------------------
-1. Will you go to the village?
-2. Do you choose the sneaky forest?
-3. Are you confident enough to be exposed in the dessert? 
-Choose your destiny! --> ''')
+        Utils.path(player)
+
     elif choice == "2":
         player_name = input('''You have chosen o be a mighty wizard!
 What is your name? --> ''')
         player = Player.Wizard(player_name)
-        print("Entering the world...")
-        os.system("cls")
-        sound = "Exploring.wav"
-        winsound.PlaySound(sound, winsound.SND_ASYNC)
-        path = input('''A crossroads lies ahead of you...
-                      (  )   /  ^  /
-                (  ) (    ) /  /  /
-               (    )  ||  /  /  /
-                 || (  )  /  F  /
-  /     \          (    )/  O  /       /_
-   |   |         (  )|| /  R  /   /\  /___\ 
-/     \         (    ) /  E  /   /__\/_____\  
- |   |/     \     ||  /  S  /   /_||/__| |__\   
-_______|___|_________/  T  /__________________      
-< -- V I L L A G E            D E S E R T -- >
-----------------------------------------------
-1. Will you go to the village?
-2. Do you choose the sneaky forest?
-3. Are you confident enough to be exposed in the dessert? 
-Choose your destiny! --> ''')
+        Utils.path(player)
+        Utils.random_number(enemy)
+
     else:
         print("That is not a valid option!")
 
