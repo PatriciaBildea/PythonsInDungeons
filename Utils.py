@@ -5,6 +5,7 @@ import Player
 import Enemies
 import random
 
+
 @staticmethod
 def path():
     print("Entering the world...")

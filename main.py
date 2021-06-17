@@ -15,11 +15,8 @@ introMsg = """
 """
 
 sound = "Main_Menu.wav"
+winsound.PlaySound(sound, winsound.SND_ASYNC)
 
-try:
-    winsound.PlaySound(sound, winsound.SND_ASYNC)
-except:
-    print("No sound found")
 print(introMsg)
 user_answer = input(''' Would you like to start the adventure?
 Yes or No -> ''')
