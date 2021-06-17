@@ -15,7 +15,11 @@ introMsg = """
 """
 
 sound = "Main_Menu.wav"
-winsound.PlaySound(sound, winsound.SND_ASYNC)
+
+try:
+    winsound.PlaySound(sound, winsound.SND_ASYNC)
+except:
+    print("No sound found")
 print(introMsg)
 user_answer = input(''' Would you like to start the adventure?
 Yes or No -> ''')
@@ -28,14 +32,15 @@ if user_answer.upper() == "YES":
         player_name = input('''You have chosen o be a mighty warrior!
 What is your name? --> ''')
         player = Player.Warrior(player_name)
-        Utils.path(player)
+        Utils.path()
+        Utils.random_number()
 
     elif choice == "2":
         player_name = input('''You have chosen o be a mighty wizard!
 What is your name? --> ''')
         player = Player.Wizard(player_name)
-        Utils.path(player)
-        Utils.random_number(enemy)
+        Utils.path()
+        Utils.random_number()
 
     else:
         print("That is not a valid option!")

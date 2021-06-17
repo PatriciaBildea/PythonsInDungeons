@@ -6,7 +6,7 @@ import Enemies
 import random
 
 
-def path(player):
+def path():
     print("Entering the world...")
     input("Press any key to continue")
     os.system("cls")
@@ -42,17 +42,17 @@ You turn around...""")
     return path
 
 
-def random_number(enemy):
+def random_number():
     number = random.randint(0, 2)
     sound = "BattleFinal.wav"
     winsound.PlaySound(sound, winsound.SND_ASYNC)
     if number == 0:
-        enemy = Enemies.Goblin
+        enemy = Enemies.Goblin()
         input("Press any key to continue")
     elif number == 1:
-        enemy = Enemies.Rat
+        enemy = Enemies.Rat()
         input("Press any key to continue")
     elif number == 2:
-        enemy = Enemies.Orc
+        enemy = Enemies.Orc()
         input("Press any key to continue")
     return enemy
