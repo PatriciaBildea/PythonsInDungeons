@@ -23,4 +23,3 @@ class Orc(Enemy):
     def __init__(self):
         super(Orc, self).__init__(100, 15)
         print("Wroooaarr, I am an orc and will crush you")
-
